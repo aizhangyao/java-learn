@@ -8,7 +8,10 @@ package com.aiz.se.day01;
  * @Version 1.0
  */
 public class HelloWorld {
-
+    /**
+     * 主方法
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println("Hello World");
     }
