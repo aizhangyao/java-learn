@@ -18,14 +18,14 @@ public class Mgr05 {
 
     }
 
-    public static synchronized Mgr05 getInstance() {
+    public static Mgr05 getInstance() {
         if (INSTANCE == null) {
             synchronized (Mgr05.class) {
-//                try {
-//                    Thread.sleep(1);
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
+                try {
+                    Thread.sleep(1);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 INSTANCE = new Mgr05();
             }
         }
