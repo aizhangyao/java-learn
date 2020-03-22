@@ -21,36 +21,66 @@ Consider the past,and you shall know the future.I look forward to your Star and 
 * [JVM性能检测工具及问题排查详解]()
 * [JVM参数调优实战]()
 ## 面向对象
-* 封装、集成、多态
-* 类和对象
-* 构造器和this
-* 属性的私有化
-* 业务方法的封装
-* extends关键字
-* 理解IS A的关系
-* 调用父类构造和super
-* 方法的重写
-* 编译时类型和运行时类型
-* Java类层次结构是一棵倒置的“树”，根:Object
-* 抽象类和接口
-* OO的核心思想
-## 设计模式[pattern]
-* 简单工厂模式
-* 单例模式[Singleton]
+* [类和对象、this、static、fianl关键字](https://www.aizhangyao.com/javase/java-class-object-this-static-final.html)
+* [面向对象三大特征：封装、继承、多态、super关键字](https://www.aizhangyao.com/javase/oo-encapsulation-inheritance-polymorphic-super.html)
+* [抽象类和接口、转型、格式化输出](https://www.aizhangyao.com/javase/abstract-interface-casting-printf.html)
+* [内部类](https://www.aizhangyao.com/javase/java-inner-class.html)
 ## API的学习
-* Object类
-* 三大常用类型(字符串String、日期类Date、数字类Number)
-* 有关异常[exception]
-* 内部类[inner class]
+* [Object类](https://www.aizhangyao.com/java-object.html)
+* [三大常用类型(字符串String、日期类Date、数字类Number)](https://www.aizhangyao.com/javase/java-string-date-number.html)
+* [有关异常](https://www.aizhangyao.com/javase/java-exception-class.html)
 * 集合框架[JCF]
-* IO流
-* 反射和注解
+	* [JCF之Collection](https://www.aizhangyao.com/javase/jcf-collection.html)
+	* [JCF之Map](https://www.aizhangyao.com/javase/jcf-map.html)
+	* [JCF之Enum](https://www.aizhangyao.com/javase/jcf-enum.html)
+* [泛型](https://www.aizhangyao.com/javase/generic-type.html)
+* [IO流](https://www.aizhangyao.com/javase/io-stream.html)
+* [反射和注解](https://www.aizhangyao.com/javase/reflect-and-annotation.html)
 * 多线程
 * 网络编程
 * XML的处理
+## Java8新特性
+* [Lambda表达式](https://www.aizhangyao.com/javase/jdk-8-lambda.html)
+* 方法引用
+* Stream流
+## 设计模式[pattern](http://c.biancheng.net/design_pattern/)
+* 面向对象设计原则
+	* 开闭原则
+	* 里氏替换原则
+	* 依赖倒置原则
+	* 单一职责原则
+	* 接口隔离原则
+	* 迪米特法则
+	* 合成复用原则
+* [UML统一建模语言](https://www.aizhangyao.com/javase/uml.html)
+* 创建型模式
+	* 单例模式(Singleton)
+	* 抽象工厂模式(AbstractFactory)
+	* 建造者模式(Builder)
+	* 工厂模式(Factory Method)
+	* 原型模式(Prototype)
+* 结构型模式
+	* 适配器模式(Adapter)
+	* 桥接模式(Bridge)
+	* 装饰模式(Decorator)
+	* 组合模式(Composite)
+	* 外观模式(Facade)
+	* 享元模式(Flyweight)
+	* 代理模式(Proxy)
+* 行为型模式
+	* 模版方法模式(TemplateMethod)
+	* 命令模式(Command)
+	* 迭代器模式(Iterator)
+	* 观察者模式(Observer)
+	* 中介者模式(Mediator)
+	* 备忘录模式(Memento)
+	* 解释器模式(Interpreter)
+	* 状态模式(State)
+	* 策略模式(Strategy)
+	* 职责链模式(责任链模式)(Chain of Responsibility)
+	* 访问者模式(Visitor)
 
 # 赞助
-
 如果您认为本项目对您有帮助，请扫描下方二维码请我喝一杯咖啡哦~
 
 | 微信赞助             | 支付宝赞助            |
@@ -59,5 +89,4 @@ Consider the past,and you shall know the future.I look forward to your Star and 
 
 
 # 联系
-
 :e-mail:Email : <819647113@qq.com>
