@@ -8,5 +8,5 @@ package com.aiz.dp.strategy;
  * @Version 1.0
  */
 public interface Comparable<T> {
-    int compareTo(T t);
+    int compareTo(T o);
 }
