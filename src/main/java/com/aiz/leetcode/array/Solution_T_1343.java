@@ -1,8 +1,8 @@
 package com.aiz.leetcode.array;
 
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  * @ClassName Solution_T_1343
@@ -46,7 +46,7 @@ public class Solution_T_1343 {
         int k_1 = 3;
         int threshold_1 = 4;
 
-        assertEquals(3, s.numOfSubarrays(arr_1, k_1, threshold_1));
+        Assert.assertEquals(3, s.numOfSubarrays(arr_1, k_1, threshold_1));
     }
 
 

@@ -1,8 +1,7 @@
 package com.aiz.leetcode.array;
 
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  * @ClassName Solution_T_4
@@ -33,35 +32,35 @@ public class Solution_T_4 {
     public void test1(){
         int[] nums1 = {1,3};
         int[] nums2 = {2};
-        assertEquals(findMedianSortedArrays(nums1,nums2),2);
+        Assert.assertEquals(findMedianSortedArrays(nums1,nums2),2);
     }
 
     @Test
     public void test2(){
         int[] nums1 = {1,2};
         int[] nums2 = {3,4};
-        assertEquals(findMedianSortedArrays(nums1,nums2),2.5);
+        Assert.assertEquals(findMedianSortedArrays(nums1,nums2),2.5);
     }
 
     @Test
     public void test3(){
         int[] nums1 = {0,0};
         int[] nums2 = {0,0};
-        assertEquals(findMedianSortedArrays(nums1,nums2),0);
+        Assert.assertEquals(findMedianSortedArrays(nums1,nums2),0);
     }
 
     @Test
     public void test4(){
         int[] nums1 = {};
         int[] nums2 = {1};
-        assertEquals(findMedianSortedArrays(nums1,nums2),1);
+        Assert.assertEquals(findMedianSortedArrays(nums1,nums2),1);
     }
 
     @Test
     public void test5(){
         int[] nums1 = {2};
         int[] nums2 = {};
-        assertEquals(findMedianSortedArrays(nums1,nums2),2);
+        Assert.assertEquals(findMedianSortedArrays(nums1,nums2),2);
     }
 
 }

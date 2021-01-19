@@ -13,6 +13,8 @@ public class Main {
 
     public static void main(String[] args) {
         HashMap map = new HashMap();
+        map.put("key",12);
+        System.out.println(map.get("key"));
     }
 
 }

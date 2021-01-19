@@ -1,8 +1,7 @@
 package com.aiz.leetcode.array;
 
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import org.junit.Test;
+import org.junit.Assert;
 
 /**
  * @ClassName Solution_T_1480
@@ -34,21 +33,21 @@ public class Solution_T_1480 {
     public void test1(){
         int[] nums = new int[]{1,2,3,4};
         int[] results = new int[]{1,3,6,10};
-        assertArrayEquals(runningSum(nums),results);
+        Assert.assertArrayEquals(runningSum(nums),results);
     }
 
     @Test
     public void test2(){
         int[] nums = new int[]{1,1,1,1,1};
         int[] results = new int[]{1,2,3,4,5};
-        assertArrayEquals(runningSum(nums),results);
+        Assert.assertArrayEquals(runningSum(nums),results);
     }
 
     @Test
     public void test3(){
         int[] nums = new int[]{3,1,2,10,1};
         int[] results = new int[]{3,4,6,16,17};
-        assertArrayEquals(runningSum(nums),results);
+        Assert.assertArrayEquals(runningSum(nums),results);
     }
 
 }
