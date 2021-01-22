@@ -39,7 +39,6 @@ public class Solution_2 {
 
         } while(l1.next!=null || l2.next != null);
 
-
         int n1 = 0;
         int n2 = 0;
         return null;
