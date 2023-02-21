@@ -14,21 +14,35 @@ import java.util.concurrent.FutureTask;
  */
 public class T2_HowToCreateThread {
 
-    static class MyThread extends Thread{
+    static class MyThread extends Thread {
         @Override
         public void run() {
             System.out.println("Hello MyThread!");
         }
     }
 
-    static class MyRun implements Runnable{
+    static class MyRun implements Runnable {
         @Override
         public void run() {
             System.out.println("Hello MyRun!");
         }
     }
 
-    static class MyCall implements Callable<String>{
+    public void myRunMethod(){
+        // 匿名内部类方式：
+        Thread thread1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("MyRunnable!");
+            }
+        });
+        // lamdba方式：
+        Thread thread2 = new Thread(()->{
+                System.out.println("MyRunnable!");
+        });
+    }
+
+    static class MyCall implements Callable<String> {
         @Override
         public String call() throws Exception {
             System.out.println("Hello MyCall!");
@@ -42,7 +56,7 @@ public class T2_HowToCreateThread {
 
         new Thread(new MyRun()).start();
 
-        new Thread(()->{
+        new Thread(() -> {
             System.out.println("Hello Lambda!");
         }).start();
 
@@ -50,7 +64,7 @@ public class T2_HowToCreateThread {
         t.start();
 
         ExecutorService service = Executors.newCachedThreadPool();
-        service.execute(()->{
+        service.execute(() -> {
             System.out.println("Hello ThreadPool!");
         });
         service.shutdown();
