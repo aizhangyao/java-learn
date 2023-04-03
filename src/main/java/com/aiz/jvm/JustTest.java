@@ -2,6 +2,8 @@ package com.aiz.jvm;
 
 import org.openjdk.jol.info.ClassLayout;
 
+import java.util.Properties;
+
 /**
  * @ClassName JustTest
  * @Description 打印对象头
@@ -17,7 +19,7 @@ public class JustTest {
         private int a;
     }
 
-    public static void main(String[] args) {
+    public static void main_1(String[] args) {
         T t = new T();
         System.out.println(ClassLayout.parseInstance(t).toPrintable());
 
@@ -34,4 +36,10 @@ public class JustTest {
 //        System.out.println(ClassLayout.parseInstance(t).toPrintable());
 
     }
+
+    public static void main(String[] args) {
+        Properties properties = System.getProperties();
+        properties.list(System.out);
+    }
+
 }
